@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KADEM EXPRESS DESIGN · Pintura & Renovaciones en Central Florida</title>
+  <meta name="description" content="Pintura interior y exterior, gabinetes, pisos y tops de epoxy, pressure washing y más. Servimos toda Central Florida; visitamos otras áreas de Florida con costo adicional según localidad y urgencia." />
+  <meta property="og:title" content="KADEM EXPRESS DESIGN" />
+  <meta property="og:description" content="Pintura y renovaciones · Cotización gratis · Central Florida" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1220; --card:#0f172a; --muted:#94a3b8; --text:#e5e7eb; --brand:#f59e0b; --brand-2:#22d3ee; --radius:18px; --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto;line-height:1.6;background:radial-gradient(1200px 600px at 10% -10%,rgba(34,211,238,.15),transparent 60%),radial-gradient(800px 500px at 90% 10%,rgba(245,158,11,.12),transparent 60%),var(--bg);color:var(--text)}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;z-index:20;background:linear-gradient(180deg,rgba(11,18,32,.9),rgba(11,18,32,.6));backdrop-filter:blur(8px);border-bottom:1px solid rgba(148,163,184,.12)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.4px}
+    .navlinks{display:flex;gap:18px;font-weight:600;color:var(--muted)}
+    .btn{display:inline-block;padding:12px 16px;border-radius:999px;background:linear-gradient(135deg,var(--brand),#ffce66);color:#111;font-weight:800;box-shadow:var(--shadow);border:0;cursor:pointer}
+    .btn.alt{background:#111;color:var(--text);border:1px solid rgba(148,163,184,.28)}
+
+    .hero{padding:56px 0 32px}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+    .pill{display:inline-flex;align-items:center;gap:8px;background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.35);color:#a5f3fc;padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px}
+    h1{font-size:44px;line-height:1.1;margin:14px 0 12px}
+    .lead{color:var(--muted);font-size:18px}
+    .card{background:linear-gradient(180deg,rgba(15,23,42,.9),rgba(15,23,42,.7));border:1px solid rgba(148,163,184,.15);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+    .hero-badge{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{padding:18px}
+    .service h3{margin:6px 0 6px}
+    .chip{display:inline-flex;gap:6px;align-items:center;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.35);color:#fde68a;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:700}
+
+    section{padding:40px 0}
+    h2{font-size:28px;margin:0 0 12px}
+    .muted{color:var(--muted)}
+
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .step{padding:16px}
+
+    .contact{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+    form{display:grid;gap:12px}
+    input, textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(148,163,184,.28);background:#0b1020;color:var(--text)}
+    label{font-size:14px;color:var(--muted)}
+    textarea{min-height:120px;resize:vertical}
+    .small{font-size:12px;color:var(--muted)}
+
+    footer{padding:28px 0;border-top:1px solid rgba(148,163,184,.12);color:var(--muted);font-size:14px}
+
+    @media (max-width: 960px){
+      .hero-grid, .contact{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr 1fr}
+      .steps{grid-template-columns:1fr 1fr}
+      h1{font-size:36px}
+    }
+    @media (max-width: 620px){
+      .grid{grid-template-columns:1fr}
+      .steps{grid-template-columns:1fr}
+      h1{font-size:30px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <img src="/logo.png" alt="KADEM EXPRESS DESIGN" style="height:36px;width:auto;border-radius:8px;background:#0b1220;padding:2px;border:1px solid rgba(148,163,184,.18)">
+        <span>KADEM EXPRESS DESIGN</span>
+      </a>
+      <nav class="navlinks">
+        <a href="#servicios">Servicios</a>
+        <a href="#cobertura">Cobertura</a>
+        <a href="#pagos">Pagos</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn" href="#contacto">Cotiza gratis</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-grid">
+        <div>
+          <span class="pill">Pintura & Renovaciones</span>
+          <h1>Acabados profesionales que elevan tu hogar o negocio</h1>
+          <p class="lead">Pintura interior/exterior · Gabinetes · Pisos y tops en epoxy · Pressure washing. Servimos <strong>toda Central Florida</strong>. También visitamos otras áreas de Florida con costo adicional según la localidad y la <strong>urgencia</strong> del trabajo.</p>
+          <div style="display:flex;gap:12px;margin-top:16px">
+            <a class="btn" href="#contacto">Pedir cotización</a>
+            <a class="btn alt" href="https://wa.me/14079513553?text=Hola%20KADEM%20EXPRESS%20DESIGN%2C%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+          <div class="hero-badge">
+            <div class="card"><strong>📅 Respuesta en 24–48h</strong><br><span class="muted">Agéndalo fácil por WhatsApp o formulario</span></div>
+            <div class="card"><strong>✅ Garantía de satisfacción</strong><br><span class="muted">Trabajo limpio, puntual y con detalles finos</span></div>
+            <div class="card"><strong>📍 Cobertura</strong><br><span class="muted">Central Florida; otras áreas con recargo por distancia y peajes.</span></div>
+            <div class="card"><strong>⏱️ Urgencias</strong><br><span class="muted">Servicio rápido disponible con recargo según horario.</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <strong>Estimado rápido</strong>
+          <p class="muted" style="margin-top:6px">Cuéntanos qué necesitas y te damos un rango estimado hoy mismo.</p>
+          <form action="#" method="post" onsubmit="alert('Esto es un demo. Reemplaza el action del formulario por tu endpoint (Formspree u otro) para recibir mensajes.');">
+            <label>Nombre<input name="name" placeholder="Tu nombre" required></label>
+            <label>Teléfono<input name="phone" placeholder="(407) 951‑3553" required></label>
+            <label>Ciudad / Área<input name="city" placeholder="Central Florida" required></label>
+            <label>Servicio<input name="service" placeholder="Pintura interior, gabinetes, epoxy…" required></label>
+            <label>Mensaje<textarea name="message" placeholder="Describe el trabajo o sube fotos (si las tienes)"></textarea></label>
+            <button class="btn" type="submit">Solicitar estimado</button>
+            <div class="small">Tip: también puedes escribirnos por WhatsApp (respuesta más rápida).</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- COBERTURA & TARIFAS -->
+    <section id="cobertura">
+      <h2>Zona de servicio & recargos</h2>
+      <div class="grid">
+        <div class="card service">
+          <div class="chip">📍 Central Florida</div>
+          <h3>Cobertura base</h3>
+          <p class="muted">Davenport, Polk County, Orlando, Kissimmee, Clermont, Lakeland y áreas cercanas.</p>
+        </div>
+        <div class="card service">
+          <div class="chip">🚐 Otras áreas</div>
+          <h3>Visitas en todo Florida</h3>
+          <p class="muted">Nos movemos a cualquier zona del estado. Se aplica costo adicional según millaje, peajes y logística.</p>
+        </div>
+        <div class="card service">
+          <div class="chip">⏱️ Urgencias</div>
+          <h3>Prioridad & horario extendido</h3>
+          <p class="muted">Trabajos urgentes o fuera de horario pueden tener recargo de 10–35% según disponibilidad.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+      <h2>Servicios principales</h2>
+      <p class="muted">Trabajos con terminación fina, limpieza y protección de superficies.</p>
+      <div class="grid">
+        <div class="card service">
+          <div class="chip">🎨 Pintura interior</div>
+          <h3>Paredes, techos y molduras</h3>
+          <p class="muted">Empapelado, resane, masillas y selladores premium para un acabado uniforme.</p>
+        </div>
+        <div class="card service">
+          <div class="chip">🏠 Pintura exterior</div>
+          <h3>Fachadas y puertas</h3>
+          <p class="muted">Lavado a presión, preparación y pintura de alto rendimiento para clima de Florida.</p>
+        </div>
+        <div class="card service">
+          <div class="chip">🧰 Gabinetes</div>
+          <h3>Renovación de cocina/baño</h3>
+          <p class="muted">Desengrase, lijado, primers y esmaltes catalizados con look de fábrica.</p>
+        </div>
+        <div class="card service">
+          <div class="chip">🧪 Epoxy</div>
+          <h3>Pisos & countertops</h3>
+          <p class="muted">Flakes decorativos, cuarzo y efectos mármol; superficies resistentes y elegantes.</p>
+        </div>
+        <div class="card service">
+          <div class="chip">💦 Pressure washing</div>
+          <h3>Entradas, patios y techos</h3>
+          <p class="muted">Remoción de moho y suciedad sin dañar la superficie.</p>
+        </div>
+        <div class="card service">
+          <div class="chip">🛠️ Reparaciones menores</div>
+          <h3>Drywall y molduras</h3>
+          <p class="muted">Parcheo, texturas y detalles para entregar listo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGOS -->
+    <section id="pagos">
+      <h2>Métodos de pago</h2>
+      <p class="muted">Factura digital y recibo. Consulta comisiones del procesador para tarjetas.</p>
+      <div class="grid">
+        <div class="card service"><div class="chip">💳 Tarjetas</div><h3>Crédito/Débito</h3><p class="muted">Visa · Mastercard · AmEx</p></div>
+        <div class="card service"><div class="chip">🏦 Transferencias</div><h3>Zelle / ACH</h3><p class="muted">Pago directo seguro</p></div>
+        <div class="card service"><div class="chip">📱 Wallets</div><h3>Apple Pay / Cash App</h3><p class="muted">Según disponibilidad</p></div>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section id="proceso">
+      <h2>Cómo trabajamos</h2>
+      <p class="muted">Claridad, puntualidad y cero regueros.</p>
+      <div class="steps">
+        <div class="card step"><strong>1. Cotización</strong><br><span class="muted">Fotos/visita y rango de precios en 24–48h.</span></div>
+        <div class="card step"><strong>2. Preparación</strong><br><span class="muted">Protección, limpieza y primers adecuados.</span></div>
+        <div class="card step"><strong>3. Ejecución</strong><br><span class="muted">Equipo profesional, tiempos reales y supervisión.</span></div>
+        <div class="card step"><strong>4. Entrega</strong><br><span class="muted">Walk‑through y garantía de satisfacción.</span></div>
+      </div>
+    </section>
+
+    <!-- CLIENTES -->
+    <section id="clientes">
+      <h2>Área de clientes</h2>
+      <div class="contact">
+        <div class="card">
+          <strong>Crear cuenta</strong>
+          <p class="muted">Regístrate para recibir <strong>descuentos</strong>, seguimiento y beneficios por <strong>referidos</strong>.</p>
+          <form action="#" method="post" onsubmit="alert('Demo: conecta con Memberstack / Supabase / ConvertKit o tu CRM para manejar cuentas y referidos.');">
+            <label>Nombre completo<input name="full_name" placeholder="Tu nombre y apellido" required></label>
+            <label>Email<input type="email" name="email" placeholder="tu@correo.com" required></label>
+            <label>Contraseña<input type="password" name="password" placeholder="Crea una contraseña" required></label>
+            <label>Código de referido (opcional)<input name="referral" placeholder="Código o email de quien te refirió"></label>
+            <label><input type="checkbox" required> Acepto recibir descuentos y novedades.</label>
+            <button class="btn" type="submit">Crear cuenta</button>
+            <div class="small">Si ya tienes cuenta, pronto habilitaremos el inicio de sesión.</div>
+          </form>
+        </div>
+        <div class="card">
+          <strong>Programa de referidos</

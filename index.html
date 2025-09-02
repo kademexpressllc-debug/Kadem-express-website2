@@ -66,8 +66,32 @@
       .grid{grid-template-columns:1fr}
       .steps{grid-template-columns:1fr}
       h1{font-size:30px}
-    }
-  <</style>
+   ...
+h1{font-size:30px}
+
+/* Botones del menú */
+.navLinks { 
+  display:flex; 
+  gap:10px; 
+  align-items:center; 
+}
+
+.btn-nav {
+  padding:8px 12px;
+  border-radius:10px;
+  border:1px solid rgba(148,163,184,.22);
+  color:#e5e7eb;
+  font-weight:600;
+  transition:all .18s ease;
+}
+
+.btn-nav.active {
+  color:#f59e0b;              /* Amarillo anaranjado */
+  font-weight:bold;
+  border-bottom:2px solid #f59e0b;
+}
+
+
 <link rel="icon" href="/favicon.png?v=2" type="image/png">
 </head>
 <body>
@@ -76,28 +100,29 @@
   <header>
   <div class="container nav">
     <a class="brand" href="#top" style="display:flex;align-items:center;gap:15px;">
-      <img src="/logo.png" alt="KADEM EXPRESS DESIGN" 
-           style="height:120px;width:auto;border-radius:8px;">
+      <img src="/logo.png" alt="KADEM EXPRESS DESIGN" style="height:120px;width:auto;border-radius:8px;">
       <div style="display:flex;flex-direction:column;">
-        <span style="font-size:28px;font-weight:bold;color:#ffffff;letter-spacing:2px;">
-          KADEM EXPRESS DESIGN
-        </span>
-        <span style="font-size:14px;color:#ffa500;font-style:italic;letter-spacing:1px;">
+        <span style="font-size:28px;font-weight:800;letter-spacing:1.5px;">KADEM EXPRESS DESIGN</span>
+        <span style="font-size:14px;color:#f59e0b;font-style:italic;letter-spacing:.8px;">
           Pintura · Renovaciones · Confianza
         </span>
       </div>
     </a>
-    <nav class="navLinks">
-      <a href="#servicios">Servicios</a>
-      <a href="#cobertura">Cobertura</a>
-      <a href="#pagos">Pagos</a>
-      <a href="#clientes">Clientes</a>
-      <a href="#procesos">Proceso</a>
-      <a href="#contacto">Contacto</a>
-      <a class="btn" href="#contacto">Cotiza gratis</a>
+
+    <nav class="navlinks">
+      <a class="btn-nav" href="#servicios">Servicios</a>
+      <a class="btn-nav" href="#cobertura">Cobertura</a>
+      <a class="btn-nav" href="#pagos">Pagos</a>
+      <a class="btn-nav" href="#clientes">Clientes</a>
+      <a class="btn-nav" href="#proceso">Proceso</a>
+      <a class="btn-nav" href="#contacto">Contacto</a>
+
+      <!-- CTA: Cotiza gratis (ahora como botón limpio a la derecha) -->
+      <a class="btn cta" href="#contacto">Cotiza gratis</a>
     </nav>
   </div>
 </header>
+
 
 
   <main class="container">
@@ -237,3 +262,28 @@
         </div>
         <div class="card">
           <strong>Programa de referidos</
+       <!-- Script para resaltar el botón activo al hacer scroll -->
+    <script>
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".btn-nav");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (pageYOffset >= sectionTop - 60) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
